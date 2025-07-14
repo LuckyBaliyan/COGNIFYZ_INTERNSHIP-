@@ -1,0 +1,97 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PP Neue Montreal", sans-serif;
+  background: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+}
+
+body img{
+    position: absolute;
+    z-index: -1;
+    width:100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.form-container {
+  background: #f8f8f810;
+  backdrop-filter: blur(4px);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #fcfbfb;
+  letter-spacing: 0.89px;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+  font-size: .8rem;
+  color: #fdfafa;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 0.1px solid #fefcfc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+input:focus {
+  border-color: #fbf8f8;
+  outline: none;
+}
+
+
+input::placeholder{
+    background-color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background:#fdfcfcf7;
+  color: rgba(5, 5, 5, 0.953);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s step-end;
+}
+
+button:hover {
+  transform: scale(0.95);
+}
+
+.error {
+  color: #ff3e30cb;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: none;
+}
